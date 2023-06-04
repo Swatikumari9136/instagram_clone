@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Instagram clone | signUp </title>
+  </head>
+  <body>
+
+          <div class="container">
+                    <div class="main-container">
+                              <div class="main-content">
+                                        <div class="slide-container">
+                                                  <div class="slide-content" id="slide-content">
+                                                            <img src="/cars-website/image/car-1.png" class="active" alt="car-1">
+                                                            <img src="/cars-website/image/car-2.png" alt="car-2">
+                                                            <img src="/cars-website/image/car-3.png" alt="car-3">
+                                                            <img src="/cars-website/image/car-4.png" alt="car-4">
+                                                            <img src="/cars-website/image/car-5.png" alt="car-5">
+                                                  </div>
+                                        </div>
+                                        <div class="form-container">
+                                                  <div class="form-content box">
+                                                            <div class="logo">
+                                                                      <img src="/image/logo.png" alt="" class="logo-img">
+                                                            </div>
+                                                            <form action="" class="login-form" id="signup-form">
+                                                              <p class="text-center alert-danger" id="error_message"></p>
+                                                                      <div class="form-group">
+                                                                                <div class="login-input">
+                                                                                          <input type="email" required name="email" placeholder="Enter Your Email">
+                                                                                </div>
+                                                                      </div>
+                                                                      <div class="form-group">
+                                                                                <div class="login-input">
+                                                                                          <input type="text" required name="username" placeholder="Enter Your Username">
+                                                                                </div>
+                                                                      </div>
+                                                                      <div class="form-group">
+                                                                                <div class="login-input">
+                                                                                          <input type="password" required id="password" name="password" placeholder="Enter Your Password">
+                                                                                </div>
+                                                                      </div>
+                                                                      <div class="form-group">
+                                                                                <div class="login-input">
+                                                                                          <input type="password" required id="password_confirm" name="password-confirm" placeholder="Enter Your Password Again">
+                                                                                </div>
+                                                                      </div>
+                                                                      <!-- <div class="form-group"> -->
+                                                                                <div class="btn-group">
+                                                                                          <button class="login-btn" id="signup-btn" type="submit">Sign Up</button>
+                                                                                </div>
+                                                                      <!-- </div> -->
+                                                            </form>
+                                                            <div class="or">
+                                                                      <hr>
+                                                                      <span>OR</span>
+                                                                      <hr>
+                                                            </div>
+                                                            <div class="goto">
+                                                                      <p>Already have an account? <a href="login.html">Login</a> </p>
+                                                            </div>
+                                                            <div class="app-download">
+                                                                      <p>Get the App.</p>
+                                                                      <div class="store-link">
+                                                                                <a href="#">
+                                                                                          <img src="/image/google-play.png" alt="">
+                                                                                </a>
+                                                                                <a href="#">
+                                                                                          <img src="/image/app-store-logo-removebg-preview.png" alt="">
+                                                                                </a>
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </div>
+                              </div> 
+                    </div>
+                   
+                    <div class="footer"> 
+                              <div class="links" id="links">
+                                        <a href="#">About</a>
+                                        <a href="#">Blog</a>
+                                        <a href="#">Jobs</a>
+                                        <a href="#">Help</a>
+                                        <a href="#">Privacy</a>
+                                        <a href="#">API</a>
+                                        <a href="#">Terms</a>
+                                        <a href="#">Hashtags</a>
+                                        <a href="#" id="dark-btn">Dark</a>
+                              </div>
+                              <div class="copyright"> @2023 instagram from meta. </div>  
+                    </div>
+          </div>
+
+          <script>
+                    setInterval(() => {
+                              changeImage();
+                    }, 2000);
+
+                    function changeImage(){
+                              var images = document
+                              .getElementById("slide-content")
+                              .getElementsByTagName("img");
+
+                              var i = 0;
+                              for( i = 0; i < images.length; i++){
+                                        var image = images[i];
+
+                                        if(image.classList.contains("active")){
+                                                  image.classList.remove("active");
+
+                                                  var nextImage = images[ i+1 ];
+                                                  nextImage.classList.add("active");
+
+                                                  break;
+                                        }
+                              }
+                    }
+
+
+
+                    function changeMode(){
+                              var body = document.getElementsByTagName('body')[0];
+                              var footerLink = document.getElementById('links').getElementsByTagName('a');
+
+                              if(body.classList.contains('dark')){
+                                        body.classList.remove('dark');
+                              }else{
+                                        body.classList.add('dark');
+                              }
+                    }
+                    document.getElementById("dark-btn").addEventListener("click", (e) => {
+                              e.preventDefault();
+                              changeMode();
+                    });
+                        
+                    function verifyform(){
+                      var password = document.getElementById("password").value;
+                      var password_confirm= document.getElementById("password_confirm").value;
+                      var error_message = document.getElementById("error_message");
+
+                      if(password.length < 6){
+                        error_message.innerHTML = "Password is too short";
+                        return false;
+                      }
+                      if(password != password_confirm){
+                        error_message.innerHTML = "Password don't match"
+                        return false;
+                      }
+                      return true;
+                    }
+                    document.getElementById("signup-form").addEventListener("submit", (e) => {
+                      e.preventDefault();
+                      verifyform();
+                    });
+
+                    
+          </script>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

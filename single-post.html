@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Instagram clone | Single-post</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-wapper">
+        <img src="/image/logo.png" alt="" class="brand-img">
+        <form action="" class="search-form">
+          <input type="text" class="search-box" placeholder="search-box">
+        </form>
+        <div class="nav-items">
+         <a href="index.html"><i class=" icon ri-home-line"></i></a> 
+         <i class=" icon ri-share-line"></i>
+         <a href="camera.html"><i class=" icon ri-add-line"></i></a> 
+         <a href="discover.html"><i class=" icon ri-heart-line"></i></a> 
+         <a href="profile.html"><i class="icon ri-user-line"></i></a> 
+        </div>
+      </div>
+     </div>
+
+       <!-- section -->
+       <div class="main single-post-container">
+        <div class="wrapper">
+          <div class="left-col">
+
+           <!----- POST--- -->
+           <div class="post">
+            <div class="info">
+              <div class="user">
+                <div class="profile-pic">
+                  <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="">
+                </div>
+                <p class="username">druvi_43</p><br>
+              </div>
+              <i class="ri-more-fill options"></i>
+            </div>
+            <img src="https://images.unsplash.com/photo-1518162899679-9c6f9c4b037c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="post-image">
+            <div class="post-content">
+              <div class="reaction-wrapper">
+                <i class=" icon ri-heart-line"></i>
+                <i class="icon ri-chat-1-line"></i>
+                <i class=" icon ri-share-line"></i>
+              </div>
+              <p class="likes">245 likes</p>
+              <p class="description"><span>druvi_43</span> this is a post by druvi_43....seen more</p>
+              <p class="post-time">3/3/2023</p>
+            </div>
+
+            <div class="comment-wrapper">
+              <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" class="icon">
+              <input type="text" class="comment-box" placeholder="Add a comment">
+              <button class="comment-btn">Post</button>
+            </div>
+           </div>
+          </div>
+          <div class="right-col">
+                        <!-- Profile-card -->
+                        <div class="profile-card">
+                          <div class="profile-pic">
+                            <img src="https://images.unsplash.com/photo-1494354145959-25cb82edf23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                          </div>
+                          <div class="profile-id-info">
+                            <h6 class="username">swati_vs</h6>
+                            <h6 class="sub-text">web_dev</h6>
+                          </div>
+                          <button class="logout-btn">logout</button>
+                        </div>
+            
+                        <!-- SUGGESTION-CARD -->
+                        <p class="suggestion-text">Suggestion For You</p>
+                        <div class="suggestion-card">
+                          <div class="suggestion-pic">
+                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                          </div >
+                          <div class="suggestion-id-info">
+                            <h6 class="username">inmobres</h6>
+                            <h6 class="sub-text">Follows you</h6>
+                          </div>
+                          <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion-card">
+                          <div class="suggestion-pic">
+                            <img src="https://images.unsplash.com/photo-1594745561416-7879589aa6b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                          </div >
+                          <div class="suggestion-id-info">
+                            <h6 class="username">mshokul_43</h6>
+                            <h6 class="sub-text">Follows you</h6>
+                          </div>
+                          <button class="follow-btn">Follow</button>
+                        </div>
+                        <div class="suggestion-card">
+                          <div class="suggestion-pic">
+                            <img src="https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                          </div >
+                          <div class="suggestion-id-info">
+                            <h6 class="username">realexp_12</h6>
+                            <h6 class="sub-text">Follows you</h6>
+                          </div>
+                          <button class="follow-btn">Follow</button>
+                        </div>
+          </div>
+          
+        </div>
+       </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
